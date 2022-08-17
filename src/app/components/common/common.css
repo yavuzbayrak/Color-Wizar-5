@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+select {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.box>div {
+    background-color: #e6e6e6;
+    width: 85px;
+    height: 7px;
+    margin: 0 10px;
+    margin-bottom: 30px;
+    border-radius: 3.5px;
+}
+
+.active {
+    background-color: #f3d4b7 !important;
+}
+
+.wrapper {
+    max-width: 1400px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .image-holder {
+    width: 51%;
+}
+
+.wrapper form {
+    width: 49%;
+}
+
+#wizard {
+    min-height: 834px;
+    background: #fff;
+    margin-right: 60px;
+    padding: 107px 75px 65px;
+}
+
+.form-row {
+    margin-bottom: 24px;
+}
+
+.form-row.form-group {
+    display: flex;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    outline: none !important;
+    appearance: unset !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    font-family: 'Roboto Slab';
+    font-size: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+section>div {
+    margin-bottom: 25px;
+}
+
+.buton {
+    padding: 0;
+    margin: 10px;
+    border: none;
+    display: inline-flex;
+    height: 51px;
+    width: 135px;
+    align-items: center;
+    background: #f3d4b7;
+    cursor: pointer;
+    position: relative;
+    padding-left: 41px;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btn-position {
+    position: absolute;
+    bottom: -5px;
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        height: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .wrapper {
+        height: 100vh;
+    }
+    #wizard {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapper {
+        justify-content: center;
+    }
+    .wrapper .image-holder {
+        display: none;
+    }
+    .wrapper form {
+        width: 60%;
+    }
+    #wizard {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

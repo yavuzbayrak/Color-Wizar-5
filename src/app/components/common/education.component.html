@@ -1,0 +1,210 @@
+<div class="wrapper">
+    <div class="image-holder">
+        <img src="../../../assets/form-wizard.png" alt="">
+    </div>
+    <form>
+
+        <div class="steps" id="wizard">
+            <div class="d-flex nowrap box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="active"></div>
+                <div> </div>
+                <div></div>
+
+            </div>
+            <h4>Eğitim Bilgiler</h4>
+            <section>
+                <div class="input-group mb-3">
+                    <label for="txtEngel"> Mezun Olunan Okullar </label>
+                    <input type="text" class="form-control" name="txtEngel" id="txtEngel" placeholder="Eklemek İçin Butona Tıklayın" disabled>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ekle</button>
+                </div>
+                <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"> Mezun Olunan Okullar </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="form-group col-lg-6 ">
+                                    <label for="txtEngel" class="form-label">Seviye</label>
+                                    <input type="text" name="txtEngel" id="txtEngel" />
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="txtRatio" class="form-label">Okul Adı</label>
+                                    <input type="text" name="txtRatio" id="txtRatio" />
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="txtRatio" class="form-label">Fakülte/Tür</label>
+                                    <input type="text" name="txtRatio" id="txtRatio" />
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="txtRatio" class="form-label">Bölüm</label>
+                                    <input type="text" name="txtRatio" id="txtRatio" />
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="txtRatio" class="form-label">Diploma Notu</label>
+                                    <input type="number" name="txtRatio" id="txtRatio" />
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="txtRatio" class="form-label">Bitiş Tarihi</label>
+                                    <input type="date" name="txtRatio" id="txtRatio" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" disabled>Temizle</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Kaydet</button>
+
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Seviye</th>
+                                        <th>Okul Adı</th>
+                                        <th>Fakülte/Tür</th>
+                                        <th>Bölümr</th>
+                                        <th>Diploma Notu</th>
+                                        <th>Bitiş Tarihi</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 1</td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td>
+                                            <button class="btn btn-outline-danger" style="width: 100%;">Sil</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <label for="txtEngel">Bilgisayar Bilgisi</label>
+                    <input type="text" class="form-control" name="txtEngel" id="txtEngel" placeholder="Eklemek İçin Butona Tıklayın" disabled>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ekle</button>
+                </div>
+                <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bilgisayar Bilgisi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group ">
+                                    <label for="txtEngel" class="form-label">Bilgisayar Bilgisi</label>
+                                    <input type="text" name="txtEngel" id="txtEngel" />
+                                </div>
+                                <div class="form-group ">
+                                    <label for="txtRatio" class="form-label">Seviyesi</label>
+                                    <input type="text" name="txtRatio" id="txtRatio" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" disabled>Temizle</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Kaydet</button>
+
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Bilgisayar Bilgisi</th>
+                                        <th>Seviyesi</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td>
+                                            <button class="btn btn-outline-danger" style="width: 100%;">Sil</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <label for="txtEngel">Yabancı Dil Bilgisi</label>
+                    <input type="text" class="form-control" name="txtEngel" id="txtEngel" placeholder="Eklemek İçin Butona Tıklayın" disabled>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Ekle</button>
+                </div>
+                <div class="modal fade modal-lg" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Yabancı Dil Bilgisi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group ">
+                                    <label for="txtEngel" class="form-label">Yabancı Dil Bilgisi</label>
+                                    <input type="text" name="txtEngel" id="txtEngel" />
+                                </div>
+                                <div class="form-group ">
+                                    <label for="txtRatio" class="form-label">Seviyesi</label>
+                                    <input type="text" name="txtRatio" id="txtRatio" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" disabled>Temizle</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Kaydet</button>
+
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Yabancı Dil</th>
+                                        <th>Seviyesi</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td>
+                                            <button class="btn btn-outline-danger" style="width: 100%;">Sil</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <div class="btn-position">
+                <button class="buton" routerLink="/beden">Geri</button>
+                <button class="buton">İleri</button>
+            </div>
+        </div>
+
+    </form>
+</div>

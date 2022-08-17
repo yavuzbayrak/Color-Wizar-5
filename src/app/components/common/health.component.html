@@ -1,0 +1,133 @@
+<div class="wrapper">
+    <div class="image-holder">
+        <img src="../../../assets/form-wizard.png" alt="">
+    </div>
+    <form>
+        <div class="steps" id="wizard">
+            <div class="d-flex nowrap box">
+                <div></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+            <h4>Sağlık Bilgisi</h4>
+            <section>
+                <div class="input-group mb-5 ">
+                    <label for="txtEngel">Engel Bilgisi</label>
+                    <input type="text" class="form-control" name="txtEngel" id="txtEngel" placeholder="Eklemek İçin Butona Tıklayın" disabled>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ekle</button>
+                </div>
+
+                <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Engel Bilgisi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group ">
+                                    <label for="txtEngel" class="form-label">Engel Adı</label>
+                                    <input type="text" name="txtEngel" id="txtEngel" />
+                                </div>
+                                <div class="form-group ">
+                                    <label for="txtRatio" class="form-label">Engel Yüzdesi</label>
+                                    <input type="text" name="txtRatio" id="txtRatio" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" disabled>Temizle</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Kaydet</button>
+
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Engel Adı</th>
+                                        <th>Engel Oranı</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of items; let i = index; ">
+                                        <td> {{ i+1 }} </td>
+                                        <td> {{ item.diseaseName }} </td>
+                                        <td> {{ item.ratio }} </td>
+                                        <td>
+                                            <button class="btn btn-outline-danger" style="width: 100%;">Sil</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <label for="txtEngel">Daha Önce Bir Ameliyat/Sağlık Sorunu Geçirdiniz mi</label>
+                    <input type="text" class="form-control" name="txtEngel" id="txtEngel" placeholder="Eklemek İçin Butona Tıklayın" disabled>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ekle</button>
+                </div>
+                <div class="modal fade modal-lg" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"> Ameliyat/Sağlık Sorunu Bilgisi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+
+                            <div class="modal-body">
+                                <div class="form-group ">
+                                    <label for="txtEngel" class="form-label"> Ameliyat/Sağlık Sorunu Adı</label>
+                                    <input type="text" name="txtEngel" id="txtEngel" />
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" disabled>Temizle</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Kaydet</button>
+                            </div>
+
+                            <table class="table table-bordered" style="text-align: center;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ameliyat Adı</th>
+                                        <th></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 1</td>
+                                        <td> Apandis</td>
+                                        <td>
+                                            <button class="btn btn-outline-danger" style="width: 100%;">Sil</button>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="btn-position">
+                <button class="buton" routerLink="/">Geri</button>
+                <button class="buton" routerLink="/beden">İleri</button>
+            </div>
+        </div>
+
+    </form>
+</div>
